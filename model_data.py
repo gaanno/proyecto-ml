@@ -29,9 +29,9 @@ class Model(object):
     def __init__(self):
         self._MODEL_FOLDER = 'models'
         self.RANDOM_STATE = 1
-        self.NUM_EPOCH = 10
-        self.LEARNING_RATE = 5e-3
-        self.BATCH_SIZE = 32
+        self.NUM_EPOCH = 1000
+        self.LEARNING_RATE = 3e-3
+        self.BATCH_SIZE = 16
         
         self._verify_path()
         self._load_data()
