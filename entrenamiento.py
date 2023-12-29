@@ -9,15 +9,14 @@ from sklearn.svm import SVC
 
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, InputLayer, LSTM
-from tensorflow.keras.optimizers import  Adam, SGD
-from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.layers import Dense, Dropout, InputLayer
+from tensorflow.keras.optimizers import  Adam
 
 # %%
 model = Model()
 
 # %%
-rf_model = RandomForestClassifier(n_estimators=512, random_state=model.RANDOM_STATE,n_jobs=12)
+rf_model = RandomForestClassifier(n_estimators=80, random_state=model.RANDOM_STATE,n_jobs=12)
 rf_model.fit(model.X_train, model.y_train)
 print(f'{rf_model.score(model.X_test, model.y_test)=}')
 # %%
