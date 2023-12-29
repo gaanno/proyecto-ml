@@ -1,16 +1,27 @@
-# INTEGRANTES
-Diego Jiménez Muñoz
-Gabriel Norambuena Muñoz
+# Integrantes
+- Diego Jiménez Muñoz
+- Gabriel Norambuena Muñoz
 
-# INSTRUCCIONES DOCKER
+# Instrucciones Docker
+ ```bash
 docker build -t proyecto-ml-dj-gn .
+ ```
+ ```bash
 docker run -ti proyecto-ml-dj-gn /bin/bash
+ ```
 
-# PREPROCESAMIENTO
+# Preprocesamiento
+ ```bash
 python3 preprocesamiento.py
+ ```
 
-# ENTRENAMIENTO
+# Entrenamiento
+Los modelos se encuentran en la carpeta [models](models/), ejecutar el siguiente comando en caso de querer entrenar nuevamente.
+ ```bash
 python3 entrenamiento.py
+ ```
 
-# PREDICCION
+# Predicción
+ ```bash
 python3 prediccion.py
+ ```
