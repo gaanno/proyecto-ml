@@ -3,9 +3,13 @@
 - Gabriel Norambuena Muñoz
 
 # Instrucciones Docker
+Construir Contenedor Docker
+
  ```bash
 docker build -t proyecto-ml-dj-gn .
  ```
+
+Ejecutar Contenedor
  ```bash
 docker run -ti proyecto-ml-dj-gn /bin/bash
  ```
