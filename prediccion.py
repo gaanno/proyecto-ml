@@ -26,7 +26,7 @@ print(f'{rf_model.score(model.X_test, model.y_test)=}')
 print(f'{svm_model.score(model.X_test, model.y_test)=}')
 print(f'{svm_model_lineal.score(model.X_test, model.y_test)=}')
 print(f'{svm_model_polinomial.score(model.X_test, model.y_test)=}')
-print(f'{model_block.evaluate(model.X_test, model.y_test_t)[1]=}')
+print(f'{model_block.evaluate(model.X_test_t, model.y_test_t)[1]=}')
 
 
 # %%
